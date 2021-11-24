@@ -1,17 +1,16 @@
+CC = g++
+CXXFLAGS = -O2 -Wall
 
-CC: g++
-CFLAGS: -Wall
+all: main.o bst.o run
 
-all: run main bst
+run: main.o bst.o
+	$(CC) $(CXXFLAGS) -o run.exe main.o bst.o
 
-run: %.o
-	$(CC) $< -o $@
+main.o: main.cc bst.cc bst.h
+	$(CC) $(CXXFLAGS) -c -o $@ $<
 
-main.o: main.cc bst.h
-	$(CC) -c $(CPPFLAGS) $< -o $@
-
-bst.o: bst.cc bst.h
-	$(CC) -c $(CPPFLAGS) $< -o $@
+bst.o: bst.c bst.h
+	$(CC) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o
+	rm -f *.exe *.o
