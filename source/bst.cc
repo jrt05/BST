@@ -9,7 +9,6 @@ BST::BST():
 
 BST::~BST()
 {
-
 }
 
 int BST::getx()
