@@ -6,6 +6,7 @@ public:
     BST();
     ~BST();
     int getx();
+
 private:
     int x;
 };
