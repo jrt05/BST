@@ -5,6 +5,6 @@
 int main()
 {
     BST val;
-    std::cout << val.getx() << "\n";
+    std::cout << val.getroot() << "\n";
     return 0;
 }

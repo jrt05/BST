@@ -10,6 +10,7 @@ public:
     Node *left;
     Node *right;
     Node *parent;
+    int getval() { return element; }
 private:
 };
 
@@ -17,9 +18,8 @@ class BST {
 public:
     BST();
     ~BST();
-    int getx();
+    int getroot();
 
 private:
-    int x;
-
+    Node *root;
 };

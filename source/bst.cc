@@ -27,17 +27,24 @@ Node::~Node()
 }
 
 BST::BST():
-    x(5)
+    root(nullptr)
 {
 
 }
 
 BST::~BST()
 {
-
+    if(root != nullptr) {
+        delete root;
+    }
 }
 
-int BST::getx()
+int BST::getroot()
 {
-    return x;
+    if (root != nullptr) {
+        return root->getval();
+    }
+    else {
+        return 0;
+    }
 }
