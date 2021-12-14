@@ -1,6 +1,17 @@
 
 #pragma once
 
+class Node {
+public:
+    Node();
+    ~Node();
+    int element;
+    Node *left;
+    Node *right;
+    Node *parent;
+private:
+};
+
 class BST {
 public:
     BST();
@@ -9,4 +20,5 @@ public:
 
 private:
     int x;
+
 };
