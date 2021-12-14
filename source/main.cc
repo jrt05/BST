@@ -11,6 +11,7 @@ int main()
 
     root = new Node(99);
     std::cout << "----" << root->getval() << "----\n";
+    delete root;
 
     return 0;
 }
