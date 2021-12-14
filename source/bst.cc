@@ -1,5 +1,6 @@
 
 #include "bst.h"
+#include <iostream>
 
 Node::Node():
     element(0),
@@ -24,6 +25,11 @@ Node::~Node()
     if(left != nullptr) {
         delete left;
     }
+    if(right != nullptr) {
+        delete right;
+    }
+    parent = nullptr;
+    std::cout << element << "\n";
 }
 
 BST::BST():
