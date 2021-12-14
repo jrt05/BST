@@ -7,6 +7,8 @@ int main()
     //BST val;
     //std::cout << val.getroot() << "\n";
 
+    Node txt(856);
+
     Node *root = nullptr;
 
     root = new Node(99);
