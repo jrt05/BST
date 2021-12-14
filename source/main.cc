@@ -10,6 +10,7 @@ int main()
     Node *root = nullptr;
 
     root = new Node(99);
+    std::cout << "----" << root->getval() << "----\n";
 
     return 0;
 }
