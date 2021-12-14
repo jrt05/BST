@@ -4,6 +4,7 @@
 class Node {
 public:
     Node();
+    Node(int);
     ~Node();
     int element;
     Node *left;
