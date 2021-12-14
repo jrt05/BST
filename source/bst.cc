@@ -10,6 +10,15 @@ Node::Node():
 
 }
 
+Node::Node(int val):
+    element(val),
+    left(nullptr),
+    right(nullptr),
+    parent(nullptr)
+{
+
+}
+
 Node::~Node()
 {
     if(left != nullptr) {
