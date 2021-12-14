@@ -3,16 +3,16 @@
 
 Node::Node():
     element(0),
-    left(NULL),
-    right(NULL),
-    parent(NULL),
+    left(nullptr),
+    right(nullptr),
+    parent(nullptr),
 {
 
 }
 
 Node::~Node()
 {
-    if(left != NULL) {
+    if(left != nullptr) {
         delete left;
     }
 }
