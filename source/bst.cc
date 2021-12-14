@@ -5,7 +5,7 @@ Node::Node():
     element(0),
     left(nullptr),
     right(nullptr),
-    parent(nullptr),
+    parent(nullptr)
 {
 
 }
